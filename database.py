@@ -13,7 +13,7 @@ def get_db():
 
     try:
         yield db
-    except:
+    finally:
         db.close()
 
 

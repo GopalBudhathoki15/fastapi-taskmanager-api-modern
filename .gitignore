@@ -24,5 +24,6 @@ env/
 .idea/
 *.swp
 .DS_Store
+
 # Alembic (if using)
 alembic/versions/*.pyc

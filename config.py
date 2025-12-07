@@ -6,6 +6,7 @@ class Settings(BaseSettings):
     algorithm: str
     database_url: str
     access_token_expires_minutes: int
+    debug: bool = False
 
     model_config = SettingsConfigDict(
         env_file=".env",
