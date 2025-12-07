@@ -1,4 +1,29 @@
+# Python cache (in any directory)
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
 .env
+
+# Database
 todomanager.db
-/todovenv
+*.db
+*.sqlite
+*.sqlite3
+
+# Virtual environment
+todovenv/
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Alembic (if using)
+alembic/versions/*.pyc
