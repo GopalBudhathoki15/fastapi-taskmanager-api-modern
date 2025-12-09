@@ -1,5 +1,6 @@
 # Python cache (in any directory)
 __pycache__/
+/.pytest_cache
 *.pyc
 *.pyo
 *.pyd

@@ -1,3 +1,4 @@
+# main.py
 from fastapi import FastAPI
 from routers.auth import router as auth_router
 from routers.user import router as user_router
@@ -17,12 +18,11 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins if not settings.debug else ["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 app.include_router(auth_router, prefix="/auth", tags=["Authentication"])
 app.include_router(user_router, prefix="/users", tags=["Users"])
